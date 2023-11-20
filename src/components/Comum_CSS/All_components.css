@@ -10,7 +10,7 @@
 @media (min-width: 300px) and (max-width: 800px) {
   .Cabecalho {
     width: 100vw;
-    height: 5vh;
+    height: 100%;
     display: space-between;
   }
 }
@@ -144,6 +144,7 @@
     height: 80vh;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
 }
 
@@ -156,7 +157,7 @@
 @media (min-width: 340px) and (max-width: 800px) {
   .Gif {
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 10vw;
     height: 310px;
     width: 310px;
   }
@@ -216,7 +217,7 @@
 @media (min-width: 340px) and (max-width: 800px) {
   .Tudo {
     flex-direction: column;
-    height: 150vh;
+    height: 100%;
   }
 }
 
@@ -236,7 +237,6 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    margin-right: 15%;
   }
 }
 
@@ -250,7 +250,7 @@
   .Cards {
     margin-left: 10%;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
   }
 }
 
@@ -265,9 +265,9 @@
   .Card {
     margin-left: 9%;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     width: 65%;
     height: 100%;
   }
@@ -298,7 +298,7 @@
   .ParteTres {
     flex-direction: column;
     gap: 0%;
-    height: 55vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -345,6 +345,7 @@
 @media (min-width: 340px) and (max-width: 800px) {
   .ParteQuatro {
     width: 100%;
+    height: 100%;
   }
 }
 
