@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Main = styled.div`
   align-items: center;
@@ -61,7 +61,6 @@ const FormLabel = styled.label`
 `;
 
 
-
 function Login({ onLogin }) {
   const [form, setForm] = useState({ email: '', password: '' });
   const navigate = useNavigate();
@@ -80,7 +79,9 @@ function Login({ onLogin }) {
           if (dataArray[i].Senha === form.password) {
             console.log("Senha correta");
             localStorage.setItem("loggedInUser", dataArray[i].Nome);
-            onLogin();
+            if (typeof onLogin === 'function') {
+              onLogin();
+            }
             navigate('/HealthGuardian');
           }
         }
@@ -88,7 +89,6 @@ function Login({ onLogin }) {
     });
   }
   return (
-
     <Main>
     <Frase_inicial className='Frase_inicial'>De volta ao Health Guardian!</Frase_inicial>
     <Login_>
@@ -111,4 +111,3 @@ function Login({ onLogin }) {
 }
 
 export default Login;
-
