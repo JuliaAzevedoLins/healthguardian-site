@@ -22,9 +22,19 @@ function Cabecalho() {
       background-color: #a37b2b; 
     }
 
+    @media (min-width: 290px) and (max-width: 310px){
+      width: 10%;
+      height: 10px;
+      margin-right: 1%;
+      font-size: 10px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
     @media (min-width: 300px) and (max-width: 800px){
-      width: 15%;
-      height: 50%;
+      width: 20%;
+      height: 30px;
       margin-right: 1%;
     }
   }
@@ -33,23 +43,23 @@ function deslogar() {
   localStorage.removeItem('loggedInUser');
 }
 
-  return (
-    <div className="Cabecalho">
-      <div className="Marca_logo">
-        <img className="Marca" src={Logo} alt="Logo" />
-        <h1 className="HealthGuardian">Health Guardian</h1>
-      </div>
-      {location.pathname !== '/' && location.pathname !== '/Login' && (
-        <div className="Links">
-          <Link to="/HealthGuardian">HealthGuardian</Link>
-          <Link to="/Cadastro">Criadores</Link>
-        </div>
-      )}
-      {location.pathname !== '/' && location.pathname !== '/Login' &&  (
-        <Deslogar onClick={deslogar} to="/Login">Deslogar</Deslogar>
-      )}
+return (
+  <div className="Cabecalho">
+    <div className="Marca_logo">
+      <img className="Marca" src={Logo} alt="Logo" />
+      <h1 className="HealthGuardian">Health Guardian</h1>
     </div>
-  );
+    {location.pathname !== '/' && location.pathname !== '/Login' && (
+      <div className="Links">
+        <Link to="/HealthGuardian">HealthGuardian</Link>
+        <Link to="/Cadastro">Criadores</Link>
+      </div>
+    )}
+    {location.pathname !== '/' && location.pathname !== '/Login' &&  (
+      <Deslogar onClick={deslogar} to="/Login">Deslogar</Deslogar>
+    )}
+  </div>
+);
 }
 
 export default Cabecalho;

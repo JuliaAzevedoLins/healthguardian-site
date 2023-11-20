@@ -86,23 +86,24 @@ function HealthGuardian() {
         </h1>
         <img className="Mocap" src={Mocap} alt="Mocap" />
       </div>
-
+      <div className="Tudo_ParteQuatro">
       <div className="ParteQuatro">
         <div className="Main_ParteQuatro">
         <h1 className="TituloParteQuatro">Nossos benefícios</h1>
         <div className="Topicos_ParteQuatro">
           <div className="Sub_ParteQuatro">
-            <img className="Finger" src={Finger} alt="Finger" />
-            <h2>Recuperação personalizada</h2>
+            <img className="Imagem_ParteQuatro" src={Finger} alt="Finger" />
+            <h2 className="Texto_Imagem_ParteQuatro">Recuperação personalizada</h2>
           </div>
           <div className="Sub_ParteQuatro">
-            <img className="Keep" src={Keep} alt="Keep" />
-            <h2>Prevenção de complicações</h2>
+            <img className="Imagem_ParteQuatro" src={Keep} alt="Keep" />
+            <h2 className="Texto_Imagem_ParteQuatro">Prevenção de complicações</h2>
           </div>
           <div className="Sub_ParteQuatro">
-            <img className="Cell" src={Cell} alt="Cell" />
-            <h2>Comunicação eficiente</h2>
+            <img className="Imagem_ParteQuatro" src={Cell} alt="Cell" />
+            <h2 className="Texto_Imagem_ParteQuatro">Comunicação eficiente</h2>
           </div>
+        </div>
         </div>
       </div>
       </div>

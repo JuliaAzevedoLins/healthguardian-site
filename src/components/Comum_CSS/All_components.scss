@@ -16,22 +16,34 @@ $cor-titulo-card: #053944;
 .Cabecalho{
   display: flex;
   height: 100px;
+  width: 100%;
   align-items: center;
   background-color: $cor1_header_footer;
   color: $cor2_header_footer;
   justify-content: space-between;
-
+  @media (min-width: 290px) and (max-width: 340px){
+    width: 100vw;
+    height: 70px;
+    display: flex;
+  }
   @media (min-width: 300px) and (max-width: 800px){
     width: 100vw;
-    height: 100%;
+    height: 70px;
     display: space-between;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    display: flex;
+    gap: 0%;
+    height: 100px;
+    width: 100%;
+  } 
 }
 
 .Links{
   display: flex;
   gap: 5%;
   margin-right: 8%;
+  
 }
 
 .Links a {
@@ -39,12 +51,13 @@ $cor-titulo-card: #053944;
   color: $cor2_header_footer;
   font-size: 15px;
   font-family: $fonte_subtitulo;
-  @media (min-width: 300px) and (max-width: 800px){
+  @media (min-width: 290px) and (max-width: 340px){
     flex-direction: column;
-    
-
   }
-
+  @media (min-width: 300px) and (max-width: 800px){
+    display: flex;
+    font-size: 10px;
+  }
 }
 
 .Links a:hover {
@@ -63,6 +76,10 @@ $cor-titulo-card: #053944;
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  @media (min-width: 800px) and (max-width: 1200px){
+    width: 50px;
+    height: 50px;
+  } 
 }
 
 .HealthGuardian{
@@ -71,9 +88,7 @@ $cor-titulo-card: #053944;
   color: $cor2_header_footer;
   @media (min-width: 300px) and (max-width: 800px){
       display: none;
-
   }
-
 }
 
 
@@ -86,12 +101,14 @@ $cor-titulo-card: #053944;
   color: $cor1_header_footer;
   display: flex;
   gap: 70%;
-
-  @media (min-width: 300px) and (max-width: 800px){
-    gap: 40%;
-    width: 100vw;
+  @media (min-width: 290px) and (max-width: 310px){
+    gap: 30vw;
+  }
+  @media (min-width: 311px) and (max-width: 800px){
+    width: 100%;
     height: 20vh;
-    display: space-between;
+    display: flex;
+    gap: 45vw;
   }
 }
 
@@ -120,7 +137,7 @@ $cor-titulo-card: #053944;
   @media (min-width: 300px) and (max-width: 800px){
     display: flex;
     flex-direction: column;
-    margin-bottom: 3vh;
+    margin-bottom: 11vh;
   }
 }
 
@@ -161,8 +178,9 @@ $cor-titulo-card: #053944;
   display: flex;
   background-color: $cor1_header_footer;
   gap: 10%;
-  height: 100vh;
-  @media (min-width: 340px) and (max-width: 800px){
+  height: 100%;
+  width: 100%;
+  @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     gap: 0%;
     height: 80vh;
@@ -170,6 +188,12 @@ $cor-titulo-card: #053944;
     align-items: center;
     height: 100%;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  } 
 }
 
 .Gif{
@@ -177,13 +201,21 @@ $cor-titulo-card: #053944;
   width: 400px;
   margin-top: 10%;
   margin-left: 10%;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 290px) and (max-width: 310px){
+    height: 70%;
+    width: 70%;
+  }
+  @media (min-width: 311px) and (max-width: 800px){
     margin-left: 5%;
     margin-top: 10vw;  
-    height: 310px;
-    width: 310px;
-
+    height: 300px;
+    width: 300px;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    margin-left: 5%;
+    height: 60%;
+    width: 60%;
+  } 
 
 }
 
@@ -193,10 +225,17 @@ $cor-titulo-card: #053944;
   font-weight: 1000;
   color: $cor-titulo-card;
   margin-top: 10%;
-  @media (min-width: 340px) and (max-width: 800px){
-    font-size: 20px;
+  @media (min-width: 300px) and (max-width: 800px){
+    font-size: 30px;
     margin: 5%;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 5%;
+}  
 }
 
 .Subtitulo_HealthGuardian{
@@ -204,13 +243,20 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor2_header_footer;
   margin-bottom: 10%;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     width: 90%;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     margin: 5%;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 5%;
+}
 }
 
 .Texto_HealthGuardian{
@@ -219,12 +265,19 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor2_header_footer;
   margin-bottom: 10%;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     width: 90%;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     margin: 5%;
+    }
+    @media (min-width: 800px) and (max-width: 1200px){
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      margin: 5%;
   }
 }
 
@@ -235,7 +288,11 @@ $cor-titulo-card: #053944;
 .Tudo{
   background-image: url('../HealthGuardian/Fundo_flores.png');
   background-size: cover;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
+    flex-direction: column;
+    height: 100%;
+  } 
+  @media (min-width: 800px) and (max-width: 1400px){
     flex-direction: column;
     height: 100%;
   } 
@@ -251,12 +308,19 @@ $cor-titulo-card: #053944;
   height: 100px;
   font-size: 40px;
   font-family: $fonte_subtitulo;
-
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
+  } 
+  @media (min-width: 800px) and (max-width: 1400px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
   } 
 }
 
@@ -265,10 +329,13 @@ $cor-titulo-card: #053944;
   border-radius:10px;
   gap: 5%;
   padding: 5%;
-  @media (min-width: 340px) and (max-width: 800px){
-    margin-left: 10%;
+  @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     gap: 50px;
+  } 
+  @media (min-width: 800px) and (max-width: 1400px){
+    height: 100%;
+    width: 100%;
   } 
 }
 
@@ -278,14 +345,18 @@ $cor-titulo-card: #053944;
   border-radius: 15px;
   height: 400px;
   width: 320px;
-  @media (min-width: 340px) and (max-width: 800px){
-    margin-left: 9%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @media (min-width: 300px) and (max-width: 800px){
     gap: 10px;
-    width: 65%;
     height: 100%;
+    width: 100%;
+  } 
+  @media (min-width: 800px) and (max-width: 1130px){
+    height: 70vh; 
+    width: 100%;
+  } 
+  @media (min-width: 1130px) and (max-width: 1400px){
+    height: 45vh; 
+    width: 100%;
   } 
 }
 
@@ -296,15 +367,20 @@ $cor-titulo-card: #053944;
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media (min-width: 800px) and (max-width: 1400px){
+    font-size: 15px;
+  } 
 }
 
 .CardTexto{
   font-size: 15px;
   font-family: $fonte_subtitulo;
   color: $cor2_header_footer;
-  margin-top: 20%;
+  margin-top: 10%;
   color: $cor2_header_footer;
-  
+  @media (min-width: 800px) and (max-width: 1400px){
+    font-size: 15px;
+  } 
 }
 
 //Parte Tres-----------------------------------------------------------------
@@ -312,13 +388,22 @@ $cor-titulo-card: #053944;
 .ParteTres{
   display: flex;
   background-color: $cor1_header_footer;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     gap: 0%;
     height: 100%;
     justify-content: center;
     align-items: center;
   } 
+  @media (min-width: 800px) and (max-width: 1200px){
+    display: flex;
+    gap: 0%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  } 
+  
 }
 
 .Texto_ParteTres{
@@ -330,35 +415,54 @@ $cor-titulo-card: #053944;
   align-items: center;
   font-family: $fonte_subtitulo;
   color: $cor-titulo-card;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     justify-content: center;
     align-items: center;
     width: 70%;
     font-size: 30px;
+    margin: 10%;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    margin: 10%;
+  } 
 }
 
 .Mocap{
   margin-top: 5%;
   height: 700px;
   width: 700px;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     height: 260px;
     width: 260px;
   }
+  @media (min-width: 800px) and (max-width: 1200px){
+    height: 260px;
+    width: 260px;
+    margin-right: 5%;
+  } 
 }
 
 //Parte Quatro-----------------------------------------------------------------
+
 
 .ParteQuatro{
   display: flex;
   background-color: $Cor-de-fundo2;
   gap: 10%;
   height: 100vh;
+  width: 100vw;
   justify-content: center;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     width: 100%;
     height: 100%;   
+  }
+  @media (min-width: 800px) and (max-width: 1400px){
+    width: 100%;
+    height: 100%;  
   }
 }
 
@@ -370,9 +474,18 @@ $cor-titulo-card: #053944;
   background-color: $cor-titulo-card;
   border-radius: 15px;
   height: 50%;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     height: 80%;
+    border-radius: 40px;
+    margin-bottom: 10%;
+  }
+  @media (min-width: 800px) and (max-width: 1400px){
+    flex-direction: column;
+    margin-top: 10%;
+    font-size: 15px;
+    margin-bottom: 10%;
+    width: 100%;
   }
 }
 
@@ -381,13 +494,22 @@ $cor-titulo-card: #053944;
   font-family: $fonte_subtitulo;
   color: $cor1_header_footer;
   margin-left: 5%;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     margin-top: 10%;
     flex-direction: column;
     justify-content: center;
+    font-size: 40px;
+  }
+  @media (min-width: 800px) and (max-width: 1400px){
+    flex-direction: flex;
+    margin-top: 10%;;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
   }
 
 }
+
 
 .Topicos_ParteQuatro{
   margin-right: 2%;
@@ -396,8 +518,65 @@ $cor-titulo-card: #053944;
   justify-content: center;
   align-items: center;
   text-align: center;
-  @media (min-width: 340px) and (max-width: 800px){
+  @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     margin-top: 10%;;
+    font-size: 15px;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  @media (min-width: 800px) and (max-width: 1400px){
+    display: flex;
+    margin-top: 5%;
+    font-size: 15px;
+    margin-bottom: 10%;
+    width: 40%;
+    gap: 10%;
   }
 }
+
+.Sub_ParteQuatro{
+  font-size: 20px;
+  font-family: $fonte_subtitulo;
+  color: $cor1_header_footer;
+  margin-left: 5%;
+  @media (min-width: 300px) and (max-width: 800px){
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (min-width: 800px) and (max-width: 1400px){
+    margin-top: 10%;;
+    font-size: 40px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+}
+
+  .Imagem_ParteQuatro{
+    height: 20vw;
+    width: 20vw;
+    @media (min-width: 300px) and (max-width: 800px){
+      height: 200px;
+      width: 200px;
+    }
+    @media (min-width: 800px) and (max-width: 1400px){
+      height: 200px;
+      width: 200px;
+      gap: 50px;
+    }
+  }
+
+  .Texto_Imagem_ParteQuatro{
+    font-size: 20px;
+    font-family: $fonte_subtitulo;
+    color: $cor1_header_footer;
+    @media (min-width: 300px) and (max-width: 800px){
+      font-size: 25px;
+    }
+    @media (min-width: 800px) and (max-width: 1400px){
+      font-size: 20px;
+    }
+  }
