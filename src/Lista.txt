@@ -1,0 +1,29 @@
+Paginas a serem finalizadas com a responsividade 
+
+- [ ] HealthGuardian
+- [X] Login
+- [ ] Cadastro
+
+Testar todas as rotas se estão em funcionamento correto
+
+- [ ] HealthGuardian
+- [ ] Login
+- [ ] Cadastro
+
+Ver se todas as páginas estão com o mesmo padrão de cores
+
+- [ ] HealthGuardian
+- [ ] Login
+- [ ] Cadastro
+
+Ver se todas as paginas estão estilizadas corretamente e com as funçoes presentes no figma 
+
+- [ ] HealthGuardian
+- [ ] Login
+- [ ] Cadastro
+
+Ver se todas as paginas estão com as funções corretas
+
+- [ ] HealthGuardian
+- [ ] Login
+- [ ] Cadastro

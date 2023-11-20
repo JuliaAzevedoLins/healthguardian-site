@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Poppins:wght@400;600&display=swap");
+.Cabecalho {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: #EEEEEE;
+  color: #000000;
+  justify-content: space-between;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Cabecalho {
+    width: 100vw;
+    height: 5vh;
+    display: space-between;
+  }
+}
+
+.Links {
+  display: flex;
+  gap: 5%;
+  margin-right: 8%;
+}
+
+.Links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Links a {
+    flex-direction: column;
+  }
+}
+
+.Links a:hover {
+  color: #DFB162;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.Marca_logo {
+  display: flex;
+  align-items: center;
+}
+
+.Marca {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.HealthGuardian {
+  font-size: 30px;
+  font-family: "Megrim", "cursive";
+  color: #000000;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .HealthGuardian {
+    display: none;
+  }
+}
+
+.Footer_ {
+  background-color: #EEEEEE;
+  color: #EEEEEE;
+  display: flex;
+  gap: 70%;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Footer_ {
+    gap: 40%;
+    width: 100vw;
+    height: 20vh;
+    display: space-between;
+  }
+}
+
+.Titulos_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.Titulo_footer {
+  font-size: 30px;
+  font-family: "Megrim", "cursive";
+  color: #000000;
+}
+
+.Subtitulo_footer {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.imagens {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .imagens {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+  }
+}
+
+.Copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEEEEE;
+  color: #000000;
+  height: 50px;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DFB162;
+  border-color: #DFB162;
+  text-align: center;
+}
+
+.botao:hover {
+  background-color: #806e0c;
+  border-color: #806e0c;
+  text-align: center;
+}
+
+.ParteUm {
+  display: flex;
+  background-color: #EEEEEE;
+  gap: 10%;
+  height: 100vh;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .ParteUm {
+    flex-direction: column;
+    gap: 0%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.Gif {
+  height: 400px;
+  width: 400px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Gif {
+    margin-left: 5%;
+    margin-top: 10%;
+    height: 310px;
+    width: 310px;
+  }
+}
+
+.Titulo_HealthGuardian {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1000;
+  color: #053944;
+  margin-top: 10%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Titulo_HealthGuardian {
+    font-size: 20px;
+    margin: 5%;
+  }
+}
+
+.Subtitulo_HealthGuardian {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  margin-bottom: 10%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Subtitulo_HealthGuardian {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 5%;
+  }
+}
+
+.Texto_HealthGuardian {
+  font-size: 20px;
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  margin-bottom: 10%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Texto_HealthGuardian {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 5%;
+  }
+}
+
+.Tudo {
+  background-image: url("../HealthGuardian/Fundo_flores.png");
+  background-size: cover;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Tudo {
+    flex-direction: column;
+    height: 150vh;
+  }
+}
+
+.funcionamento {
+  font-weight: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EEEEEE;
+  height: 100px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .funcionamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 15%;
+  }
+}
+
+.Cards {
+  display: flex;
+  border-radius: 10px;
+  gap: 5%;
+  padding: 5%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Cards {
+    margin-left: 10%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.Card {
+  padding: 2%;
+  background-color: #EEEEEE;
+  border-radius: 15px;
+  height: 400px;
+  width: 320px;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Card {
+    margin-left: 9%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+  }
+}
+
+.CardTitulo {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #053944;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.CardTexto {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  margin-top: 20%;
+  color: #000000;
+}
+
+.ParteTres {
+  display: flex;
+  background-color: #EEEEEE;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .ParteTres {
+    flex-direction: column;
+    gap: 0%;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.Texto_ParteTres {
+  margin-left: 5%;
+  display: flex;
+  font-size: 50px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #053944;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Texto_ParteTres {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 30px;
+  }
+}
+
+.Mocap {
+  margin-top: 5%;
+  height: 700px;
+  width: 700px;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Mocap {
+    height: 260px;
+    width: 260px;
+  }
+}
+
+.ParteQuatro {
+  display: flex;
+  background-color: #9CBCCC;
+  gap: 10%;
+  height: 100vh;
+  justify-content: center;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .ParteQuatro {
+    width: 100%;
+  }
+}
+
+.Main_ParteQuatro {
+  margin-top: 10%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: #053944;
+  border-radius: 15px;
+  height: 50%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Main_ParteQuatro {
+    flex-direction: column;
+    height: 80%;
+  }
+}
+
+.TituloParteQuatro {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #EEEEEE;
+  margin-left: 5%;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .TituloParteQuatro {
+    margin-top: 10%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.Topicos_ParteQuatro {
+  margin-right: 2%;
+  display: flex;
+  color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 340px) and (max-width: 800px) {
+  .Topicos_ParteQuatro {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+}/*# sourceMappingURL=All_components.css.map */
