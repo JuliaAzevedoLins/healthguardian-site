@@ -23,6 +23,7 @@ function App() {
         <Route exact path="*" element={<Login onLogin={handleLogin} />} />
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/HealthGuardian" element={<HealthGuardian />} />
+
       </Routes>
       <Footer />
     </Router>
