@@ -51,6 +51,7 @@ function Login({ onLogin }) {
         if (dataArray[i].Email === form.email) {
           if (dataArray[i].Senha === form.password) {
             console.log("Senha correta");
+            localStorage.setItem("loggedInUser", dataArray[i].Nome);
             onLogin();
             navigate('/HealthGuardian');
           }
@@ -63,7 +64,7 @@ function Login({ onLogin }) {
     <Main>
     <Frase_inicial className='Frase_inicial'>De volta ao Health Guardian!</Frase_inicial>
     <Login_>
-    <Form onSubmit={handleSubmit} style={{width:"30%"}}>
+    <Form onSubmit={handleSubmit} style={{width:"50%"}}>
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Label>E-mail</Form.Label>
         <Form.Control type="email" placeholder="Digite seu email" name="email" value={form.email} onChange={handleChange} />

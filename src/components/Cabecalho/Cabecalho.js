@@ -29,6 +29,9 @@ function Cabecalho() {
     }
   }
   `;
+function deslogar() {
+  localStorage.removeItem('loggedInUser');
+}
 
   return (
     <div className="Cabecalho">
@@ -43,7 +46,7 @@ function Cabecalho() {
         </div>
       )}
       {location.pathname !== '/' && location.pathname !== '/Login' &&  (
-        <Deslogar  to="/Login">Deslogar</Deslogar>
+        <Deslogar onClick={deslogar} to="/Login">Deslogar</Deslogar>
       )}
     </div>
   );
