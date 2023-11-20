@@ -1,7 +1,7 @@
 {
   "name": "global-site",
   "version": "0.1.0",
-  "homepage": "http://JuliaAzevedoLins.github.io/HealthGuardian---FrontEnd---JS/",
+  "homepage": "http://JuliaAzevedoLins.github.io/healthguardian-site/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
