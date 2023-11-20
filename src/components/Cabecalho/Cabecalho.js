@@ -49,13 +49,13 @@ return (
       <img className="Marca" src={Logo} alt="Logo" />
       <h1 className="HealthGuardian">Health Guardian</h1>
     </div>
-    {location.pathname !== '/' && location.pathname !== '/Login' && (
+    {location.pathname !== '/' &&  location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
       <div className="Links">
         <Link to="/HealthGuardian">HealthGuardian</Link>
         <Link to="/Cadastro">Criadores</Link>
       </div>
     )}
-    {location.pathname !== '/' && location.pathname !== '/Login' &&  (
+    {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' &&(
       <Deslogar onClick={deslogar} to="/Login">Deslogar</Deslogar>
     )}
   </div>

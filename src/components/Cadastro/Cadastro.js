@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const Main = styled.div`
   display: flex;
@@ -9,7 +10,33 @@ const Main = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #9CBCCC;
+  background-color:#1F7385;
+`;
+
+const Send_to_cadastro = styled.div`
+
+  padding-top: 2%;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  color: #ffff;
+  @media (min-width: 300px) and (max-width: 800px){
+    font-size: 15px;
+  }
+
+`;
+
+const Clique_aqui = styled(Link)`
+  color: #598C92;
+  text-decoration: none;
+  &:hover {
+    color: #a37b2b;
+  }
+`;
+
+const FormLabel = styled.label`
+  color: #ffff;
+
 `;
 
 
@@ -67,10 +94,10 @@ function Signup() {
 
   return (
     <Main>
-        <Form onSubmit={handleSubmit} style={{width:"30%"}}>
+        <Form onSubmit={handleSubmit} className="formStyle">
           <Form.Group className="mb-3" controlId="formGroupEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
+            <FormLabel>Email</FormLabel>
+            <Form.Control className="input"
               type="email"
               placeholder="Enter email"
               name="email"
@@ -80,7 +107,7 @@ function Signup() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGroupName">
-            <Form.Label>Name</Form.Label>
+            <FormLabel>Name</FormLabel>
             <Form.Control
               type="text"
               placeholder="Enter name"
@@ -91,7 +118,7 @@ function Signup() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGroupPassword">
-            <Form.Label>Password</Form.Label>
+            <FormLabel>Password</FormLabel>
             <Form.Control
               type="password"
               placeholder="Password"
@@ -102,7 +129,7 @@ function Signup() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGroupPhone">
-            <Form.Label>Phone</Form.Label>
+            <FormLabel>Phone</FormLabel>
             <Form.Control
               type="tel"
               placeholder="Enter phone number"
@@ -113,7 +140,7 @@ function Signup() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGroupPostalCode">
-            <Form.Label>Postal Code</Form.Label>
+            <FormLabel>Postal Code</FormLabel>
             <Form.Control
               type="text"
               placeholder="Enter postal code"
@@ -124,7 +151,7 @@ function Signup() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGroupAddress">
-            <Form.Label>Address</Form.Label>
+            <FormLabel>Address</FormLabel>
             <Form.Control
               type="text"
               placeholder="Enter address"
@@ -139,6 +166,8 @@ function Signup() {
           <Button className="botao" variant="primary" type="submit" style={{margin:"0 auto", width:"50%"}}>
             Submit
           </Button>
+          <Send_to_cadastro>Já possui uma conta?</Send_to_cadastro>
+          <Send_to_cadastro>Você pode<Clique_aqui to="/Login"> entrar aqui!</Clique_aqui></Send_to_cadastro>
         </Form>
     </Main>
   );

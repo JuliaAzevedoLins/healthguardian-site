@@ -11,6 +11,24 @@ $Cor-de-fundo3: #D4D2E3;
 $cor-texto-card: #5397C5;
 $cor-titulo-card: #053944;
 
+.formStyle{
+  width: 300px;
+}
+@media (min-width: 576px) {
+  .formStyle {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .formStyle {
+    width: 400px;
+  }
+}
+
+.input{
+  background-color: #EEEEEE;
+}
+
 //Cabecalho-----------------------------------------------------------------
 
 .Cabecalho{
@@ -468,12 +486,13 @@ $cor-titulo-card: #053944;
 
 .Main_ParteQuatro{
   margin-top: 10%;
-  width: 90%;
+  width: 95%;
   display: flex;
   align-items: center;
   background-color: $cor-titulo-card;
   border-radius: 15px;
   height: 50%;
+  gap: 5%;
   @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     height: 80%;
@@ -486,6 +505,7 @@ $cor-titulo-card: #053944;
     font-size: 15px;
     margin-bottom: 10%;
     width: 100%;
+    height: 70vh;
   }
 }
 
@@ -502,7 +522,7 @@ $cor-titulo-card: #053944;
   }
   @media (min-width: 800px) and (max-width: 1400px){
     flex-direction: flex;
-    margin-top: 10%;;
+    margin-top: 5%;
     font-size: 40px;
     justify-content: center;
     text-align: center;
@@ -556,13 +576,13 @@ $cor-titulo-card: #053944;
 }
 
   .Imagem_ParteQuatro{
-    height: 20vw;
-    width: 20vw;
+    height: 300px;
+    width: 300px;
     @media (min-width: 300px) and (max-width: 800px){
       height: 200px;
       width: 200px;
     }
-    @media (min-width: 800px) and (max-width: 1400px){
+    @media (min-width: 800px) and (max-width: 1700px){
       height: 200px;
       width: 200px;
       gap: 50px;
