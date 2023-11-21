@@ -154,7 +154,7 @@
   .imagens {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
   }
 }
 
@@ -658,5 +658,236 @@
 @media (min-width: 800px) and (max-width: 1400px) {
   .Texto_Imagem_ParteQuatro {
     font-size: 20px;
+  }
+}
+
+.Criadores {
+  background-color: #053944;
+  padding: 5%;
+  height: 100vh;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Criadores {
+    height: 110%;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Criadores {
+    height: 110%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1270px) {
+  .Criadores {
+    height: 110vh;
+  }
+}
+
+.Criadores_Main {
+  display: flex;
+  gap: 5%;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Criadores_Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Criadores_Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.Ju-Lu {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Ju-Lu {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Ju-Lu {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1270px) {
+  .Ju-Lu {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+}
+
+.Titulos {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #EEEEEE;
+  font-family: "Poppins", sans-serif;
+  padding: 5%;
+  gap: 10px;
+}
+
+.Titulo_Criadores {
+  font-weight: 1000;
+  font-size: 50px;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Titulo_Criadores {
+    font-size: 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Titulo_Criadores {
+    font-size: 30px;
+  }
+}
+
+.Subtitulo_Criadores {
+  font-size: 30px;
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Subtitulo_Criadores {
+    font-size: 20px;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Subtitulo_Criadores {
+    font-size: 15px;
+  }
+}
+
+.Cards_Criadores {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Cards_Criadores {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Cards_Criadores {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1270px) {
+  .Cards_Criadores {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.Card_Luis {
+  padding: 2%;
+  display: flex;
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Card_Luis {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .Card_Luis {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 10%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1270px) {
+  .Card_Luis {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+}
+
+.Parte1_Card_Luis {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Parte1_Card_Luis {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1270px) {
+  .Parte1_Card_Luis {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Parte2_Card_Luis {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .Parte2_Card_Luis {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1270px) {
+  .Parte2_Card_Luis {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=All_components.css.map */

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Fundo from "./FundoLogin.png"
 
 
 const Main = styled.div`
@@ -10,7 +11,8 @@ const Main = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: #1F7385;
+  background-image: url(${Fundo});
+  background-size: cover;
   @media (min-width: 300px) and (max-width: 800px){
     width: 100vw;
     height: 70vh;
@@ -91,8 +93,8 @@ function Login({ onLogin }) {
       });
   };
   return (
+
     <Main>
-     
       <Login_>
       <Frase_inicial className="Frase_inicial">
         De volta ao Health Guardian!
@@ -132,6 +134,7 @@ function Login({ onLogin }) {
         </Form>
       </Login_>
     </Main>
+
   );
 }
 
