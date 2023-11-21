@@ -78,6 +78,12 @@
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
+@media (min-width: 300px) and (max-width: 800px) {
+  .Links a:hover {
+    display: flex;
+    font-size: 10px;
+  }
+}
 
 .Marca_logo {
   display: flex;

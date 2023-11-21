@@ -33,9 +33,10 @@ function Cabecalho() {
     }
 
     @media (min-width: 300px) and (max-width: 800px){
-      width: 20%;
-      height: 30px;
+      width: 60px;
+      height: 20px;
       margin-right: 1%;
+      font-size: 10px;
     }
   }
   `;

@@ -82,6 +82,10 @@ $cor-titulo-card: #053944;
   color: $cor-primaria;
   font-size: 15px;
   font-family: $fonte_subtitulo;
+  @media (min-width: 300px) and (max-width: 800px){
+    display: flex;
+    font-size: 10px;
+  }
 }
 
 

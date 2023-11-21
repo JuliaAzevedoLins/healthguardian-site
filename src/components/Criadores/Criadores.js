@@ -23,8 +23,12 @@ function Criadores() {
               <h2>Luis Barreto</h2>
               <p>19 anos</p>
               <div className='Insta_Linkedin'>
+                <a href="https://www.instagram.com/lbarreto_351/" target="_blank" rel="noopener noreferrer">
                 <img className="Insta" src={Insta} alt="Insta" />
+                </a>
+                <a href="https://www.linkedin.com/in/lu%C3%ADs-barreto1351/" target="_blank" rel="noopener noreferrer">
                 <img className="Linkedin" src={Linkedin} alt="Linkedin" />
+                </a>
               </div>
             </div>
             <div className='Parte2_Card_Luis'>
@@ -39,8 +43,12 @@ function Criadores() {
               <h2>Julia Lins</h2>
               <p>20 anos</p>
               <div className='Insta_Linkedin'>
+                <a href="https://www.instagram.com/Juh.az/" target="_blank" rel="noopener noreferrer">
                 <img className="Insta" src={Insta} alt="Insta" />
+                </a>
+                <a href="https://www.linkedin.com/in/julia-azevedo-lins/" target="_blank" rel="noopener noreferrer">
                 <img className="Linkedin" src={Linkedin} alt="Linkedin" />
+                </a>
               </div>
             </div>
             <div className='Parte2_Card_Luis'>
