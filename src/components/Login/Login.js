@@ -15,7 +15,7 @@ const Main = styled.div`
   background-size: cover;
   @media (min-width: 300px) and (max-width: 800px){
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     display: space-between;
   }
   
