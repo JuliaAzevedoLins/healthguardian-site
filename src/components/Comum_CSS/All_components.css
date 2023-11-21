@@ -113,9 +113,9 @@
   display: flex;
   gap: 70%;
 }
-@media (min-width: 290px) and (max-width: 310px) {
+@media (min-width: 290px) and (max-width: 311px) {
   .Footer_ {
-    gap: 30vw;
+    gap: 25vw;
   }
 }
 @media (min-width: 311px) and (max-width: 800px) {
@@ -154,7 +154,7 @@
   .imagens {
     display: flex;
     flex-direction: column;
-    margin-bottom: 11vh;
+    margin-bottom: 10vh;
   }
 }
 
@@ -506,7 +506,7 @@
   background-color: #9CBCCC;
   gap: 10%;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
 }
 @media (min-width: 300px) and (max-width: 800px) {

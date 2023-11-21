@@ -119,8 +119,8 @@ $cor-titulo-card: #053944;
   color: $cor1_header_footer;
   display: flex;
   gap: 70%;
-  @media (min-width: 290px) and (max-width: 310px){
-    gap: 30vw;
+  @media (min-width: 290px) and (max-width: 311px){
+    gap: 25vw;
   }
   @media (min-width: 311px) and (max-width: 800px){
     width: 100%;
@@ -155,7 +155,7 @@ $cor-titulo-card: #053944;
   @media (min-width: 300px) and (max-width: 800px){
     display: flex;
     flex-direction: column;
-    margin-bottom: 11vh;
+    margin-bottom: 10vh;
   }
 }
 
@@ -472,7 +472,7 @@ $cor-titulo-card: #053944;
   background-color: $Cor-de-fundo2;
   gap: 10%;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   @media (min-width: 300px) and (max-width: 800px){
     width: 100%;

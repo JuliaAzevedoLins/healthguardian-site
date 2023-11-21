@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import "../src/components/Comum_CSS/All_components.css";
 import HealthGuardian from "./components/HealthGuardian/HealthGuardian";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Criadores from "./components/Criadores/Criadores"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/HealthGuardian" element={<HealthGuardian />} />
+        <Route path="/Criadores" element={<Criadores />} />
       </Routes>
       <Footer />
     </Router>

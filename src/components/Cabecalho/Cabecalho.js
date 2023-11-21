@@ -52,7 +52,7 @@ return (
     {location.pathname !== '/' &&  location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
       <div className="Links">
         <Link to="/HealthGuardian">HealthGuardian</Link>
-        <Link to="/Cadastro">Criadores</Link>
+        <Link to="/Criadores">Criadores</Link>
       </div>
     )}
     {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' &&(

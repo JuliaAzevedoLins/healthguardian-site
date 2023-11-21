@@ -9,8 +9,9 @@ const Main = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color:#1F7385;
+  flex-direction: column;
 `;
 
 const Send_to_cadastro = styled.div`
@@ -23,7 +24,20 @@ const Send_to_cadastro = styled.div`
   @media (min-width: 300px) and (max-width: 800px){
     font-size: 15px;
   }
+`;
 
+const Frase_inicial = styled.div`
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  color: #ffff;
+  margin-bottom: 50px;
+  @media (min-width: 300px) and (max-width: 800px){
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 50px;
+  }
 `;
 
 const Clique_aqui = styled(Link)`
@@ -94,6 +108,7 @@ function Signup() {
 
   return (
     <Main>
+      <Frase_inicial className='Frase_inicial'>De volta ao Health Guardian!</Frase_inicial>
         <Form onSubmit={handleSubmit} className="formStyle">
           <Form.Group className="mb-3" controlId="formGroupEmail">
             <FormLabel>Email</FormLabel>
