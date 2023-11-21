@@ -37,8 +37,9 @@ Acesse aqui o nosso site:
 - O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas, determinando se há necessidade de retorno ao hospital.
 
 ## Integração com o Firebase (Banco de dados)
-- Nós integramos nossos dados (Login e Cadastro) diretamento com a API Firebase, para que assim os dados de nossos clientes estejam protegidos em uma plataforma segura!
-- Onde só será possível acessar a página principal, após realizar o Login. Dessa forma, realizamos uma validação em nosso banco de dados para ver aqueles usuários que já estão cadastrados, caso estejam, será possível prosseguir para a página principal e navegar em nosso site.
+- Nós integramos nossos dados (Login e Cadastro) diretamento com a API do Firebase, para que assim os dados de nossos clientes estejam protegidos em uma plataforma segura!
+- Só será possível acessar a página principal, após realizar o Login.
+- Dessa forma, realizamos uma validação em nosso banco de dados para ver aqueles usuários que já estão cadastrados, caso estejam, será possível prosseguir para a página principal e navegar em nosso site.
 - Caso não possuam cadastro, também disponibilizamos uma área para cadastro de novos usuários em nosso site, e ao realizar, esses dados já são enviados para o Firebase e o usuário poderá voltar e realizar o Login normalmente.
 
 ## Funcionalidades do HealthGuardian
