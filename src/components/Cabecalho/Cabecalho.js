@@ -2,13 +2,26 @@ import React from "react";
 import Logo from "./logo.png";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
+import { useEffect } from "react";
+import { useState } from "react";
+
 
 function Cabecalho() {
   const location = useLocation();
+  const [firstName, setFirstName] = useState("");
 
-  const Deslogar = styled(Link)`
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("loggedInUser"); 
+    if (loggedInUser) {
+      const firstName = loggedInUser.split(" ")[0];
+      console.log(loggedInUser);
+      setFirstName(firstName);
+    }
+  });
+
+    const Deslogar = styled(Link)`
     margin-right: 1%;
-    width: 10%;
+    width: 100px;
     height: 30%;
     background-color: #c3913b;
     border-radius: 5px;
@@ -40,27 +53,31 @@ function Cabecalho() {
     }
   }
   `;
-function deslogar() {
-  localStorage.removeItem('loggedInUser');
-}
+      function deslogar() {
+        localStorage.removeItem('loggedInUser');
+        setFirstName("");
+      }
 
-return (
-  <div className="Cabecalho">
-    <div className="Marca_logo">
-      <img className="Marca" src={Logo} alt="Logo" />
-      <h1 className="HealthGuardian">Health Guardian</h1>
-    </div>
-    {location.pathname !== '/' &&  location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
-      <div className="Links">
-        <Link to="/HealthGuardian">HealthGuardian</Link>
-        <Link to="/Criadores">Criadores</Link>
-      </div>
-    )}
-    {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' &&(
-      <Deslogar onClick={deslogar} to="/Login">Deslogar</Deslogar>
-    )}
-  </div>
-);
-}
+      return (
+        <div className="Cabecalho">
+          <div className="Marca_logo">
+            <img className="Marca" src={Logo} alt="Logo" />
+            <h1 className="HealthGuardian">Health Guardian</h1>
+          </div>
+          {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
+            <div className="Links">
+              <Link to="/HealthGuardian">HealthGuardian</Link>
+              <Link to="/Criadores">Criadores</Link>
+            </div>
+          )}
+          <div className="Nome_Deslogar">
+          <h2 className="Nome_LocalStorage">Bem-Vindo: <strong>{firstName}</strong></h2>
+          {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
+            <Deslogar onClick={deslogar} to="/Login">Deslogar</Deslogar>
+          )}
+          </div>
+        </div>
+      );
+    }
 
-export default Cabecalho;
+    export default Cabecalho;

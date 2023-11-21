@@ -21,7 +21,7 @@ const Main = styled.div`
   
 `;
 
-const Login_ = styled.div`
+const LoginComponent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ const Login_ = styled.div`
   flex-direction: column;
 `;
 
-const Frase_inicial = styled.div`
+const InitialPhrase = styled.div`
   padding-top: 7%;
   font-size: 30px;
   text-align: center;
@@ -37,7 +37,7 @@ const Frase_inicial = styled.div`
   color: #ffff;
 `;
 
-const Send_to_cadastro = styled.div`
+const SendToCadastro = styled.div`
 
   padding-top: 2%;
   font-size: 20px;
@@ -50,7 +50,7 @@ const Send_to_cadastro = styled.div`
 
 `;
 
-const Clique_aqui = styled(Link)`
+const ClickHere = styled(Link)`
   color: #598C92;
   text-decoration: none;
   &:hover {
@@ -95,10 +95,10 @@ function Login({ onLogin }) {
   return (
 
     <Main>
-      <Login_>
-      <Frase_inicial className="Frase_inicial">
+      <LoginComponent>
+      <InitialPhrase className="Frase_inicial">
         De volta ao Health Guardian!
-      </Frase_inicial>
+      </InitialPhrase>
         <Form onSubmit={handleSubmit} className="formStyle">
           <Form.Group className="mb-3" controlId="formGroupEmail">
             <FormLabel>E-mail</FormLabel>
@@ -126,13 +126,13 @@ function Login({ onLogin }) {
             value="Submit"
             style={{ margin: "0 auto", width: "50%" }}
           />
-          <Send_to_cadastro>Ainda não possui uma conta?</Send_to_cadastro>
-          <Send_to_cadastro>
+          <SendToCadastro>Ainda não possui uma conta?</SendToCadastro>
+          <SendToCadastro>
             Você pode{" "}
-            <Clique_aqui to="/Cadastro">criar uma conta aqui!</Clique_aqui>
-          </Send_to_cadastro>
+            <ClickHere to="/Cadastro">criar uma conta aqui!</ClickHere>
+          </SendToCadastro>
         </Form>
-      </Login_>
+      </LoginComponent>
     </Main>
 
   );

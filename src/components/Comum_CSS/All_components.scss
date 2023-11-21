@@ -113,6 +113,23 @@ $cor-titulo-card: #053944;
   }
 }
 
+.Nome_Deslogar{
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nome_LocalStorage{
+  font-size: 15px;
+  font-family: $fonte_subtitulo;
+  @media (min-width: 300px) and (max-width: 348px){
+    font-size: 10px;
+  }
+}
+  
+
 
 
 //Footer-----------------------------------------------------------------
@@ -201,8 +218,10 @@ $cor-titulo-card: #053944;
   display: flex;
   background-color: $cor1_header_footer;
   gap: 10%;
-  height: 100%;
+  height: 90vh;
   width: 100%;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 300px) and (max-width: 800px){
     flex-direction: column;
     gap: 0%;
@@ -220,9 +239,9 @@ $cor-titulo-card: #053944;
 }
 
 .Gif{
-  height: 400px;
-  width: 400px;
-  margin-top: 10%;
+  height: 500px;
+  width: 500px;
+  margin-bottom: 2%;
   margin-left: 10%;
   @media (min-width: 290px) and (max-width: 310px){
     height: 70%;

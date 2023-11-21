@@ -14,7 +14,7 @@ const Main = styled.div`
   flex-direction: column;
 `;
 
-const Send_to_cadastro = styled.div`
+const SendToCadastro = styled.div`
 
   padding-top: 2%;
   font-size: 20px;
@@ -26,7 +26,7 @@ const Send_to_cadastro = styled.div`
   }
 `;
 
-const Frase_inicial = styled.div`
+const InitialPhrase = styled.div`
   font-size: 30px;
   text-align: center;
   justify-content: center;
@@ -40,7 +40,7 @@ const Frase_inicial = styled.div`
   }
 `;
 
-const Clique_aqui = styled(Link)`
+const ClickHere = styled(Link)`
   color: #598C92;
   text-decoration: none;
   &:hover {
@@ -108,7 +108,7 @@ function Signup() {
 
   return (
     <Main>
-      <Frase_inicial className='Frase_inicial'>De volta ao Health Guardian!</Frase_inicial>
+      <InitialPhrase className='Frase_inicial'>De volta ao Health Guardian!</InitialPhrase>
         <Form onSubmit={handleSubmit} className="formStyle">
           <Form.Group className="mb-3" controlId="formGroupEmail">
             <FormLabel>Email</FormLabel>
@@ -181,8 +181,8 @@ function Signup() {
           <Button className="botao" variant="primary" type="submit" style={{margin:"0 auto", width:"50%"}}>
             Submit
           </Button>
-          <Send_to_cadastro>Já possui uma conta?</Send_to_cadastro>
-          <Send_to_cadastro>Você pode<Clique_aqui to="/Login"> entrar aqui!</Clique_aqui></Send_to_cadastro>
+          <SendToCadastro>Já possui uma conta?</SendToCadastro>
+          <SendToCadastro>Você pode<ClickHere to="/Login"> entrar aqui!</ClickHere></SendToCadastro>
         </Form>
     </Main>
   );

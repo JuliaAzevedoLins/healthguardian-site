@@ -1,7 +1,6 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect  } from "react";
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from "./components/Login/Login";
 import Cadastro from "./components/Cadastro/Cadastro";
 import Footer from "./components/Footer/Footer";
@@ -10,9 +9,15 @@ import HealthGuardian from "./components/HealthGuardian/HealthGuardian";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Criadores from "./components/Criadores/Criadores"
 
-
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    const auth = localStorage.getItem('isAuthenticated');
+    return auth ? JSON.parse(auth) : false;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('isAuthenticated', JSON.stringify(isAuthenticated));
+  }, [isAuthenticated]);
 
   const handleLogin = () => {
     setIsAuthenticated(true);
@@ -22,11 +27,11 @@ function App() {
     <Router>
       <Cabecalho />
       <Routes>
-      <Route exact path="/" element={<Login onLogin={handleLogin} />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/" element={<Login onLogin={handleLogin} />} />
+        <Route path="Login" element={<Login onLogin={handleLogin} />} />
         <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/HealthGuardian" element={<HealthGuardian />} />
-        <Route path="/Criadores" element={<Criadores />} />
+        <Route path="/HealthGuardian" element={isAuthenticated ? <HealthGuardian /> : <Navigate to="/Login" replace />} />
+        <Route path="/Criadores" element={isAuthenticated ? <Criadores /> : <Navigate to="/Login" replace />} />
       </Routes>
       <Footer />
     </Router>
