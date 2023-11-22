@@ -6,7 +6,7 @@ import Cadastro from "./components/Cadastro/Cadastro";
 import Footer from "./components/Footer/Footer";
 import "../src/components/Comum_CSS/All_components.css";
 import HealthGuardian from "./components/HealthGuardian/HealthGuardian";
-import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Header from "./components/Header/Header";
 import Criadores from "./components/Criadores/Criadores"
 import Beneficios from "./components/Beneficios/Beneficios";
 
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Router>
-      <Cabecalho />
+      <Header />
       <Routes>
         <Route path="/" element={<Login onLogin={handleLogin} />} />
         <Route path="Login" element={<Login onLogin={handleLogin} />} />

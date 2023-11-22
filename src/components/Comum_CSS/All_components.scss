@@ -78,7 +78,6 @@ $cor-titulo-card: #053944;
   padding: 1%;
   height: 100px;
   width: 100%;
-  align-items: center;
   background-color: $cor1_header_footer;
   color: $cor2_header_footer;
   justify-content: space-around;
@@ -127,9 +126,9 @@ button{
   }
 }
 
-.Links:hover {
+.link_header:hover {
   color: $cor-primaria;
-  font-size: 15px;
+  font-size: 20px;
   font-family: $fonte_subtitulo;
   @media (min-width: 300px) and (max-width: 800px){
     display: flex;
