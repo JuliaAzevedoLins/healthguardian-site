@@ -1073,6 +1073,14 @@
     background-position-x: 65%;
   }
 }
+@media (min-width: 800px) and (max-width: 1200px) {
+  .Div_itulo_Beneficios {
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+  }
+}
 
 .Titulo_Beneficios {
   color: #EEEEEE;
@@ -1129,7 +1137,7 @@
     height: 250px;
   }
 }
-@media (min-width: 800px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .imagens_Beneficios {
     display: flex;
     flex-direction: column;
@@ -1150,9 +1158,9 @@
     font-size: 20px;
   }
 }
-@media (min-width: 800px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .Subtitulo_Beneficios {
-    font-size: 20px;
+    font-size: 25 px;
   }
 }
 
@@ -1170,10 +1178,10 @@
     font-size: 15px;
   }
 }
-@media (min-width: 800px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .Texto_Beneficios {
     width: 100%;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -1197,7 +1205,7 @@
     height: 60vh;
   }
 }
-@media (min-width: 600px) and (max-width: 980px) {
+@media (min-width: 600px) and (max-width: 1200px) {
   .beneficios1 {
     display: flex;
     flex-direction: column;
@@ -1228,10 +1236,10 @@
     height: 60vh;
   }
 }
-@media (min-width: 800px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .beneficios2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -1257,13 +1265,13 @@
     height: 500px;
   }
 }
-@media (min-width: 800px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .beneficios3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 600px;
   }
 }
 
@@ -1280,7 +1288,7 @@
     height: 600px;
   }
 }
-@media (min-width: 800px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .Beneficios_3 {
     display: flex;
     flex-direction: column;

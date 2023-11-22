@@ -2,7 +2,6 @@ import WallpaperBeneficios from "./Wallpaper_Beneficios.png";
 import Celular from "./Celular.png";
 import Estetoscopio from "./Estetoscopio.png";
 import Homem from "./Homem.png";
-import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
 
 

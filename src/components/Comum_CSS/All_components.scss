@@ -1039,6 +1039,12 @@ button {
     background-repeat: no-repeat;
     background-position-x: 65%;
   }
+  @media (min-width: 800px) and (max-width: 1200px) {
+    background-position: 75%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+  }
 }
 
 .Titulo_Beneficios {
@@ -1096,7 +1102,7 @@ button {
     height: 250px;
   }
 
-  @media (min-width: 800px) and (max-width: 980px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1115,8 +1121,8 @@ button {
     font-size: 20px;
   }
 
-  @media (min-width: 800px) and (max-width: 980px) {
-    font-size: 20px;
+  @media (min-width: 800px) and (max-width: 1200px) {
+    font-size: 25 px;
   }
 }
 
@@ -1133,9 +1139,9 @@ button {
     font-size: 15px;
   }
 
-  @media (min-width: 800px) and (max-width: 980px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     width: 100%;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -1158,7 +1164,7 @@ button {
     height: 60vh;
   }
 
-  @media (min-width: 600px) and (max-width: 980px) {
+  @media (min-width: 600px) and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1187,9 +1193,9 @@ button {
     height: 60vh;
   }
 
-  @media (min-width: 800px) and (max-width: 980px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -1216,12 +1222,12 @@ button {
     height: 500px;
   }
 
-  @media (min-width: 800px) and (max-width: 980px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 600px;
   }
 }
 
@@ -1237,7 +1243,7 @@ button {
     height: 600px;
   }
 
-  @media (min-width: 800px) and (max-width: 980px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
