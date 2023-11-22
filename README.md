@@ -1,3 +1,66 @@
+<h1 align="center">HealthGuardian! 🩺💊</h1>
+
+###
+
+<p align="center">Repositório dedicado ao nosso trabalho de Front-End e Java Script da Global Solution 2023.2</p>
+
+###
+
+<div align="center">
+  <p align="center">Clique aqui para o nosso vídeo explicativo no <a href="https://www.youtube.com/">Youtube</a></p>
+  <a href="https://www.youtube.com/">
+    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
+  </a>
+</div>
+
+
+## Integrantes - ESPW
+- Julia Azevedo Lins: RM98690
+- Luís Gustavo Barreto Garrido: RM99210
+  
+
+## Importante
+```diff
+-                                USUÁRIO E SENHA                                  -
+Para acessar o nosso site, utilize as seguintes credenciais ou faça o seu cadastro:
+
+Usuário: admin
+Senha: 123456
+
+```
+## Link do nosso site
+Acesse aqui o nosso site: 
+[https://juliaazevedolins.github.io/healthguardian-site/](https://juliaazevedolins.github.io/healthguardian-site/)
+
+
+## Descrição
+- O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas, determinando se há necessidade de retorno ao hospital.
+
+## Integração com o Firebase (Banco de dados)
+- Nós integramos nossos dados (Login e Cadastro) diretamento com a API do Firebase, para que assim os dados de nossos clientes estejam protegidos em uma plataforma segura!
+- Só será possível acessar a página principal, após realizar o Login.
+- Dessa forma, realizamos uma validação em nosso banco de dados para ver aqueles usuários que já estão cadastrados, caso estejam, será possível prosseguir para a página principal e navegar em nosso site.
+- Caso não possuam cadastro, também disponibilizamos uma área para cadastro de novos usuários em nosso site, e ao realizar, esses dados já são enviados para o Firebase e o usuário poderá voltar e realizar o Login normalmente.
+
+## Funcionalidades do HealthGuardian
+
+**Monitoramento personalizado**
+- Após um procedimento médico, seu médico determinará a necessidade de acompanhamento. 
+O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.
+**Avaliações diárias do paciente**
+- Dependendo da gravidade do procedimento, 
+o HealthGuardian solicitará que você responda a perguntas diárias sobre seu estado de saúde. Essas avaliações são personalizadas e adaptadas às orientações específicas do seu médico.
+**Alertas e intervenções precoces**
+- Caso o sistema identifique alguma alteração preocupante em seus dados ou nas respostas fornecidas, alertas proativos serão acionados. Se necessário, o HealthGuardian facilitará a comunicação direta com seus profissionais de saúde, permitindo intervenções rápidas.
+**Tempo de monitoramento**
+- O período de monitoramento diário será estipulado pelo médico, levando em consideração a natureza do procedimento e sua gravidade. 
+Ao final desse período, uma avaliação geral será realizada para determinar se é necessário continuar o monitoramento.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
