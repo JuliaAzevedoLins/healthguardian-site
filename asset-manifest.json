@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/healthguardian-site/static/css/main.5618003a.css",
-    "main.js": "/healthguardian-site/static/js/main.6576cd64.js",
+    "main.css": "/healthguardian-site/static/css/main.d4d6dfb0.css",
+    "main.js": "/healthguardian-site/static/js/main.989ec6f9.js",
     "static/js/787.820c775b.chunk.js": "/healthguardian-site/static/js/787.820c775b.chunk.js",
     "static/media/wallpaper.png": "/healthguardian-site/static/media/wallpaper.8a2809d1d5c263abf87d.png",
     "static/media/Fundo_flores.png": "/healthguardian-site/static/media/Fundo_flores.7b066b8523003c10ef48.png",
@@ -17,12 +17,12 @@
     "static/media/Cellphone.png": "/healthguardian-site/static/media/Cellphone.3a735e7a72dd7b0bf246.png",
     "static/media/KeepSafe.png": "/healthguardian-site/static/media/KeepSafe.bab7c6041a2e5fca094b.png",
     "index.html": "/healthguardian-site/index.html",
-    "main.5618003a.css.map": "/healthguardian-site/static/css/main.5618003a.css.map",
-    "main.6576cd64.js.map": "/healthguardian-site/static/js/main.6576cd64.js.map",
+    "main.d4d6dfb0.css.map": "/healthguardian-site/static/css/main.d4d6dfb0.css.map",
+    "main.989ec6f9.js.map": "/healthguardian-site/static/js/main.989ec6f9.js.map",
     "787.820c775b.chunk.js.map": "/healthguardian-site/static/js/787.820c775b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5618003a.css",
-    "static/js/main.6576cd64.js"
+    "static/css/main.d4d6dfb0.css",
+    "static/js/main.989ec6f9.js"
   ]
 }
