@@ -62,14 +62,18 @@ const FormLabel = styled.label`
   color: #ffff;
 
 `;
-
 function Login({ onLogin }) {
   const [form, setForm] = useState({ email: "", password: "" });
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value
+    });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch(
@@ -78,62 +82,69 @@ function Login({ onLogin }) {
       .then((response) => response.json())
       .then((data) => {
         const dataArray = Object.values(data);
+        let userFound = false;
         for (let i = 0; i < dataArray.length; i++) {
-          if (dataArray[i].Email === form.email) {
-            if (dataArray[i].Senha === form.password) {
-              console.log("Senha correta");
-              localStorage.setItem("loggedInUser", dataArray[i].Nome);
-              if (typeof onLogin === "function") {
-                onLogin();
-              }
-              navigate("/HealthGuardian");
+          if (dataArray[i].Email === form.email && dataArray[i].Senha === form.password) {
+            userFound = true;
+            console.log("Senha correta");
+            localStorage.setItem("loggedInUser", dataArray[i].Nome);
+            if (typeof onLogin === "function") {
+              onLogin();
             }
+            navigate("/HealthGuardian");
+            break;
           }
+        }
+        if (!userFound) {
+          setError('Senha ou e-mail incorretos');
         }
       });
   };
   return (
 
-    <Main>
-      <LoginComponent>
-      <InitialPhrase className="Frase_inicial">
-        De volta ao Health Guardian!
-      </InitialPhrase>
-        <Form onSubmit={handleSubmit} className="formStyle">
-          <Form.Group className="mb-3" controlId="formGroupEmail">
-            <FormLabel>E-mail</FormLabel>
-            <Form.Control
-              type="email"
-              placeholder="Digite seu email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formGroupPassword">
-            <FormLabel>Senha</FormLabel>
-            <Form.Control
-              type="password"
-              placeholder="Digite sua senha"
-              name="password"
-              value={form.password}
-              onChange={handleChange}
-            />
-          </Form.Group>
-          <Form.Control
-            className="botao"
-            type="submit"
-            value="Submit"
-            style={{ margin: "0 auto", width: "50%" }}
-          />
-          <SendToCadastro>Ainda não possui uma conta?</SendToCadastro>
-          <SendToCadastro>
-            Você pode{" "}
-            <ClickHere to="/Cadastro">criar uma conta aqui!</ClickHere>
-          </SendToCadastro>
-        </Form>
-      </LoginComponent>
-    </Main>
+<Main>
+  <LoginComponent>
+    <InitialPhrase className="Frase_inicial">
+      De volta ao Health Guardian!
+    </InitialPhrase>
+    <br></br>
+    <Form onSubmit={handleSubmit} className="formStyle">
+      <Form.Group className="mb-3" controlId="formGroupEmail">
+        <FormLabel>E-mail</FormLabel>
+        <Form.Control
+          type="email"
+          placeholder="Digite seu email"
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formGroupPassword">
+        <FormLabel>Senha</FormLabel>
+        <Form.Control
+          type="password"
+          placeholder="Digite sua senha"
+          name="password"
+          value={form.password}
+          onChange={handleChange}
+        />
+        <br></br>
+        {error && <p style={{color: 'red'}}>{error}</p>}
+      </Form.Group>
+      <Form.Control
+        className="botao"
+        type="submit"
+        value="Submit"
+        style={{ margin: "0 auto", width: "50%" }}
+      />
+      <SendToCadastro>Ainda não possui uma conta?</SendToCadastro>
+      <SendToCadastro>
+        Você pode{" "}
+        <ClickHere to="/Cadastro">criar uma conta aqui!</ClickHere>
+      </SendToCadastro>
+    </Form>
+  </LoginComponent>
+</Main>
 
   );
 }

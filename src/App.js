@@ -8,6 +8,7 @@ import "../src/components/Comum_CSS/All_components.css";
 import HealthGuardian from "./components/HealthGuardian/HealthGuardian";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Criadores from "./components/Criadores/Criadores"
+import Beneficios from "./components/Beneficios/Beneficios";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/HealthGuardian" element={isAuthenticated ? <HealthGuardian /> : <Navigate to="/Login" replace />} />
         <Route path="/Criadores" element={isAuthenticated ? <Criadores /> : <Navigate to="/Login" replace />} />
+        <Route path="/Beneficios" element={isAuthenticated ? <Beneficios /> : <Navigate to="/Login" replace />} />
       </Routes>
       <Footer />
     </Router>

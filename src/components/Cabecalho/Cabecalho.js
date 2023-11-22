@@ -68,6 +68,7 @@ function Cabecalho() {
             <div className="Links">
               <Link to="/HealthGuardian">HealthGuardian</Link>
               <Link to="/Criadores">Criadores</Link>
+              <Link to="/Beneficios">Beneficios</Link>
             </div>
           )}
           <div className="Nome_Deslogar">
