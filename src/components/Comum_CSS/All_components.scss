@@ -466,7 +466,7 @@ button {
     width: 90%;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     margin: 5%;
   }
 }
@@ -650,159 +650,6 @@ button {
     height: 260px;
     width: 260px;
     margin-right: 5%;
-  }
-}
-
-//Parte Quatro-----------------------------------------------------------------
-
-
-.ParteQuatro {
-  display: flex;
-  background-color: $Cor-de-fundo2;
-  gap: 10%;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (min-width: 800px) and (max-width: 1400px) {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.Main_ParteQuatro {
-  margin-top: 10%;
-  width: 95%;
-  display: flex;
-  align-items: center;
-  background-color: $cor-titulo-card;
-  border-radius: 15px;
-  height: 50%;
-  gap: 5%;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    flex-direction: column;
-    height: 80%;
-    border-radius: 40px;
-    margin-bottom: 10%;
-  }
-
-  @media (min-width: 800px) and (max-width: 1400px) {
-    flex-direction: column;
-    margin-top: 10%;
-    font-size: 15px;
-    margin-bottom: 10%;
-    width: 100%;
-    height: 70vh;
-  }
-}
-
-.TituloParteQuatro {
-  font-size: 50px;
-  font-family: $fonte_subtitulo;
-  color: $cor1_header_footer;
-  margin-left: 5%;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    margin-top: 10%;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 40px;
-  }
-
-  @media (min-width: 800px) and (max-width: 1400px) {
-    flex-direction: flex;
-    margin-top: 5%;
-    font-size: 40px;
-    justify-content: center;
-    text-align: center;
-  }
-
-}
-
-
-.Topicos_ParteQuatro {
-  margin-right: 2%;
-  display: flex;
-  color: $cor1_header_footer;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    flex-direction: column;
-    margin-top: 10%;
-    ;
-    font-size: 15px;
-    margin-bottom: 10%;
-    width: 100%;
-  }
-
-  @media (min-width: 800px) and (max-width: 1400px) {
-    display: flex;
-    margin-top: 5%;
-    font-size: 15px;
-    margin-bottom: 10%;
-    width: 40%;
-    gap: 10%;
-  }
-}
-
-.Sub_ParteQuatro {
-  font-size: 20px;
-  font-family: $fonte_subtitulo;
-  color: $cor1_header_footer;
-  margin-left: 5%;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    margin-top: 10%;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  @media (min-width: 800px) and (max-width: 1400px) {
-    margin-top: 10%;
-    ;
-    font-size: 40px;
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
-  }
-}
-
-.Imagem_ParteQuatro {
-  height: 300px;
-  width: 300px;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    height: 200px;
-    width: 200px;
-  }
-
-  @media (min-width: 800px) and (max-width: 1700px) {
-    height: 200px;
-    width: 200px;
-    gap: 50px;
-  }
-}
-
-.Texto_Imagem_ParteQuatro {
-  font-size: 20px;
-  font-family: $fonte_subtitulo;
-  color: $cor1_header_footer;
-
-  @media (min-width: 300px) and (max-width: 800px) {
-    font-size: 25px;
-  }
-
-  @media (min-width: 800px) and (max-width: 1400px) {
-    font-size: 20px;
   }
 }
 
@@ -1325,7 +1172,6 @@ button {
     margin-bottom: 50%;
     padding: 3%;
   }
-
 }
 
 .Print_lista{

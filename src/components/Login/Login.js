@@ -14,9 +14,6 @@ const Main = styled.div`
   background-image: url(${Fundo});
   background-size: cover;
   @media (min-width: 300px) and (max-width: 800px){
-    width: 100vw;
-    height: 100vh;
-    display: space-between;
   }
   
 `;
