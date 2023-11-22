@@ -5,8 +5,10 @@ import Homem from "./Homem.png";
 import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
 
+
 function Beneficios() {
     const [data, setData] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         fetch('https://healthguardian-e9b30-default-rtdb.firebaseio.com/DadosHealth.json')
@@ -14,25 +16,12 @@ function Beneficios() {
             .then(data => {
                 const values = Object.values(data);
                 setData(values);
-                values.forEach(element => {
-                    console.log("----------------------------------")
-                    console.log(element.name)
-                    console.log(element.questao1)
-                    console.log(element.questao2)
-                    console.log(element.questao3)
-                    console.log(element.questao4)
-                    console.log(element.questao5)
-                    console.log(element.questao6)
-                    console.log(element.questao7)
-                    console.log(element.questao8)
-                    console.log(element.questao9)
-                    console.log(element.questao10)
-                    console.log(element.pressao)
-                    console.log(element.temperatura)
-
-                });
             });
     }, []);
+
+    const filteredData = data.filter(item => item.name.toLowerCase() === searchTerm.toLowerCase());
+
+
 
 
     return (
@@ -73,26 +62,27 @@ function Beneficios() {
                         O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
                 </div>
                 <div className="Informaçoes">
-                    <h3 className="Pacientes">Pacientes</h3>
-                    {data.map((item, index) => (
-                        <li key={index}>{item.name}   |
-                          {item.questao1} |
-                          {item.questao2} |
-                          {item.questao3} |
-                          {item.questao4} |
-                          {item.questao5} |
-                          {item.questao6} |
-                          {item.questao7} |
-                          {item.questao8} |
-                          {item.questao9} |
-                          {item.questao10} |
-                            {item.pressao} |
-                            {item.temperatura}
-                          
-                          </li>
+                    <h2 className="Subtitulo_Beneficios">Procure aqui seu dispositivo!</h2>
+                    <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Search by name" />
+                    {searchTerm && filteredData.map((item, index) => (
+                        <li key={index} style={{ margin: '10px 0', padding: '10px', border: '1px solid #ccc', borderRadius: '5px' }}>
+                            <strong>Question 1:</strong> {item.questao1 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 2:</strong> {item.questao2 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 3:</strong> {item.questao3 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 4:</strong> {item.questao4 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 5:</strong> {item.questao5 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 6:</strong> {item.questao6 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 7:</strong> {item.questao7 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 8:</strong> {item.questao8 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 9:</strong> {item.questao9 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Question 10:</strong> {item.questao10 === 1 ? 'Sim' : 'Não'} <br />
+                            <strong>Pressão:</strong> {item.pressao} <br />
+                            <strong>Temperatura:</strong> {item.temperatura} <br />
+
+                        </li>
                     ))}
-                    </div>
                 </div>
+            </div>
         </main>
     );
 }
