@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/healthguardian-site/static/css/main.35711a40.css",
-    "main.js": "/healthguardian-site/static/js/main.37d54178.js",
+    "main.css": "/healthguardian-site/static/css/main.20cd5b6b.css",
+    "main.js": "/healthguardian-site/static/js/main.c7d07c20.js",
     "static/js/787.820c775b.chunk.js": "/healthguardian-site/static/js/787.820c775b.chunk.js",
+    "static/media/wallpaper.png": "/healthguardian-site/static/media/wallpaper.8a2809d1d5c263abf87d.png",
     "static/media/Fundo_flores.png": "/healthguardian-site/static/media/Fundo_flores.7b066b8523003c10ef48.png",
     "static/media/FundoLogin.png": "/healthguardian-site/static/media/FundoLogin.4e35938f4dd53f3aa122.png",
+    "static/media/Wallpaper_Beneficios.png": "/healthguardian-site/static/media/Wallpaper_Beneficios.8a75241a53254ea56124.png",
     "static/media/Lu_ju.png": "/healthguardian-site/static/media/Lu_ju.5c73c3c6c2c3dd16217a.png",
     "static/media/HealthGuardian - GIF.gif": "/healthguardian-site/static/media/HealthGuardian - GIF.95ea2914a4095e8ff0ec.gif",
+    "static/media/Homem.png": "/healthguardian-site/static/media/Homem.eeecfa13e9d2e254c30e.png",
+    "static/media/Estetoscopio.png": "/healthguardian-site/static/media/Estetoscopio.aa3ad85feb3e4db44cb4.png",
+    "static/media/Celular.png": "/healthguardian-site/static/media/Celular.293bb5e8bce5eed09cf1.png",
     "static/media/Mocap.png": "/healthguardian-site/static/media/Mocap.236e87a397a6f54867d0.png",
     "static/media/Finger.png": "/healthguardian-site/static/media/Finger.ed776d48eaedb8938999.png",
     "static/media/Cellphone.png": "/healthguardian-site/static/media/Cellphone.3a735e7a72dd7b0bf246.png",
     "static/media/KeepSafe.png": "/healthguardian-site/static/media/KeepSafe.bab7c6041a2e5fca094b.png",
     "index.html": "/healthguardian-site/index.html",
-    "main.35711a40.css.map": "/healthguardian-site/static/css/main.35711a40.css.map",
-    "main.37d54178.js.map": "/healthguardian-site/static/js/main.37d54178.js.map",
+    "main.20cd5b6b.css.map": "/healthguardian-site/static/css/main.20cd5b6b.css.map",
+    "main.c7d07c20.js.map": "/healthguardian-site/static/js/main.c7d07c20.js.map",
     "787.820c775b.chunk.js.map": "/healthguardian-site/static/js/787.820c775b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35711a40.css",
-    "static/js/main.37d54178.js"
+    "static/css/main.20cd5b6b.css",
+    "static/js/main.c7d07c20.js"
   ]
 }
