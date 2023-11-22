@@ -18,6 +18,50 @@
   background-color: #EEEEEE;
 }
 
+.Dropdow {
+  background-color: #DFB162;
+  border: none;
+}
+.Dropdow:active, .Dropdow:focus {
+  background-color: #DFB162;
+}
+.Dropdow:hover {
+  background-color: #053944;
+}
+@media (min-width: 800px) {
+  .Dropdow {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .my-dropdown {
+    height: 100%;
+    color: #000000;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .my-dropdown-toggle {
+    height: 100%;
+    color: #000000;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .my-dropdown-menu {
+    height: 600%;
+    color: #000000;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .my-dropdown-item {
+    height: 100%;
+    color: #000000;
+  }
+}
+
 .Cabecalho {
   display: flex;
   padding: 1%;
@@ -39,55 +83,58 @@
   .Cabecalho {
     width: 100vw;
     height: 70px;
-    display: space-between;
+    display: space-around;
   }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   .Cabecalho {
-    display: flex;
     gap: 0%;
     height: 100px;
     width: 100%;
   }
 }
 
+@media (min-width: 300px) and (max-width: 800px) {
+  button {
+    display: none;
+  }
+}
+
 .Links {
   display: flex;
   gap: 5%;
-  margin-right: 8%;
-}
-
-.Links a {
   text-decoration: none;
   color: #000000;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 @media (min-width: 290px) and (max-width: 340px) {
-  .Links a {
+  .Links {
     flex-direction: column;
   }
 }
 @media (min-width: 300px) and (max-width: 800px) {
-  .Links a {
-    display: flex;
+  .Links {
+    display: none;
     font-size: 10px;
+    border-radius: 10px;
   }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
-  .Links a {
+  .Links {
     display: flex;
     font-size: 15px;
+    gap: 5%;
   }
 }
 
-.Links a:hover {
+.Links:hover {
   color: #DFB162;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
 @media (min-width: 300px) and (max-width: 800px) {
-  .Links a:hover {
+  .Links:hover {
     display: flex;
     font-size: 10px;
   }
@@ -96,6 +143,11 @@
 .Marca_logo {
   display: flex;
   align-items: center;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Marca_logo {
+    display: flex;
+  }
 }
 
 .Marca {
@@ -117,10 +169,14 @@
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .HealthGuardian {
-    display: none;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
-@media (min-width: 800px) and (max-width: 1100px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .HealthGuardian {
     font-size: 25px;
   }
@@ -133,24 +189,60 @@
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 800px) {
+  .Nome_Deslogar {
+    display: none;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .Nome_Deslogar {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+}
 
 .Nome_LocalStorage {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
-@media (min-width: 800px) and (max-width: 1100px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .Nome_LocalStorage {
     font-size: 15px;
   }
 }
-@media (min-width: 318px) and (max-width: 800px) {
+@media (min-width: 318px) and (max-width: 799px) {
   .Nome_LocalStorage {
-    font-size: 10px;
+    display: none;
   }
 }
 @media (min-width: 300px) and (max-width: 318px) {
   .Nome_LocalStorage {
-    font-size: 7px;
+    display: none;
+  }
+}
+
+.Nome_LocalStorage_submenu {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .Nome_LocalStorage_submenu {
+    font-size: 15px;
+  }
+}
+@media (min-width: 318px) and (max-width: 800px) {
+  .Nome_LocalStorage_submenu {
+    padding: 10%;
+    font-size: 13px;
+  }
+}
+@media (min-width: 300px) and (max-width: 318px) {
+  .Nome_LocalStorage_submenu {
+    font-size: 10px;
   }
 }
 
@@ -1108,7 +1200,27 @@
   gap: 50px;
 }
 
-.lista_informacoes {
+.Input_Paciente {
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.patient-info {
+  padding: 3%;
   list-style: none;
   color: #000000;
+  background-color: #EEEEEE;
+  border-radius: 15px;
+  width: 300px;
+}
+
+strong {
+  font-weight: 1000;
+  color: #5397C5;
 }/*# sourceMappingURL=All_components.css.map */

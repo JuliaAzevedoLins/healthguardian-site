@@ -31,6 +31,47 @@ $cor-titulo-card: #053944;
 
 //Cabecalho-----------------------------------------------------------------
 
+.Dropdow{
+  background-color: $cor-primaria;
+  border : none;
+  &:active, &:focus {
+    background-color: $cor-primaria; // Replace with the color you want
+  }
+  &:hover {
+    background-color: $cor-titulo-card; // Replace with the color you want
+  }
+  @media (min-width: 800px){
+    display: none;
+}
+}
+
+.my-dropdown {
+  @media (min-width: 300px) and (max-width: 800px){
+    height: 100%;
+    color: #000000;
+}
+}
+
+ .my-dropdown-toggle {
+  @media (min-width: 300px) and (max-width: 800px){
+    height: 100%;
+    color: #000000;
+}
+ }
+
+ .my-dropdown-menu {
+  @media (min-width: 300px) and (max-width: 800px){
+    height: 600%;
+    color: #000000;
+}
+ }
+
+ .my-dropdown-item {
+  @media (min-width: 300px) and (max-width: 800px){
+    height: 100%;
+    color: #000000;
+}
+ }
 
 .Cabecalho{
   display: flex;
@@ -49,24 +90,24 @@ $cor-titulo-card: #053944;
   @media (min-width: 300px) and (max-width: 800px){
     width: 100vw;
     height: 70px;
-    display: space-between;
+    display: space-around;
   }
   @media (min-width: 800px) and (max-width: 1200px){
-    display: flex;
     gap: 0%;
     height: 100px;
     width: 100%;
   } 
 }
 
-.Links{
-  display: flex;
-  gap: 5%;
-  margin-right: 8%;
-  
+button{
+  @media (min-width: 300px) and (max-width: 800px){
+    display: none;
+  }
 }
 
-.Links a {
+.Links {
+  display: flex;
+  gap: 5%;
   text-decoration: none;
   color: $cor2_header_footer;
   font-size: 20px;
@@ -75,16 +116,18 @@ $cor-titulo-card: #053944;
     flex-direction: column;
   }
   @media (min-width: 300px) and (max-width: 800px){
-    display: flex;
+    display: none;
     font-size: 10px;
+    border-radius: 10px;
   }
   @media (min-width: 800px) and (max-width: 1200px){
     display: flex;
     font-size: 15px;
+    gap: 5%;
   }
 }
 
-.Links a:hover {
+.Links:hover {
   color: $cor-primaria;
   font-size: 15px;
   font-family: $fonte_subtitulo;
@@ -98,6 +141,10 @@ $cor-titulo-card: #053944;
 .Marca_logo{
   display: flex;
   align-items: center;
+
+  @media (min-width: 300px) and (max-width: 800px){
+    display: flex;
+  }
 }
 
 .Marca{
@@ -115,9 +162,13 @@ $cor-titulo-card: #053944;
   font-family: $fonte_principal;
   color: $cor2_header_footer;
   @media (min-width: 300px) and (max-width: 800px){
-      display: none;
+      display: flex;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
   }
-  @media (min-width: 800px) and (max-width: 1100px){
+  @media (min-width: 800px) and (max-width: 1200px){
     font-size: 25px;
   }
 }
@@ -128,19 +179,46 @@ $cor-titulo-card: #053944;
   gap: 5%;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 300px) and (max-width: 800px){
+    display: none;
+  } 
+  @media (min-width: 800px) and (max-width: 1200px){
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
 }
 
 .Nome_LocalStorage{
   font-size: 15px;
   font-family: $fonte_subtitulo;
-  @media (min-width: 800px) and (max-width: 1100px){
+  @media (min-width: 800px) and (max-width: 1200px){
     font-size: 15px;
   }
-  @media (min-width: 318px) and (max-width: 800px){
-    font-size: 10px;
+  @media (min-width: 318px) and (max-width: 799px){
+    display: none;
   }
   @media (min-width: 300px) and (max-width: 318px){
-    font-size: 7px;
+    display: none;
+  }
+}
+
+.Nome_LocalStorage_submenu{
+  font-size: 15px;
+  font-family: $fonte_subtitulo;
+  @media (min-width: 800px) and (max-width: 1200px){
+    font-size: 15px;
+  }
+  @media (min-width: 318px) and (max-width: 800px){ 
+    padding: 10%;
+    font-size: 13px;
+  }
+  @media (min-width: 300px) and (max-width: 318px){
+    font-size: 10px;
   }
 }
   
@@ -987,9 +1065,30 @@ $cor-titulo-card: #053944;
   gap: 50px;
 }
 
-.lista_informacoes{
+.Input_Paciente{
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+.patient-info{
+  padding: 3%;
   list-style: none;
   color: $cor2_header_footer;
+  background-color: $cor1_header_footer;
+  border-radius: 15px;
+  width: 300px;
+  
+}
+
+strong{
+  font-weight: 1000;
+  color: $cor-texto-card;
 }
 
 
