@@ -106,6 +106,8 @@
   color: #000000;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 290px) and (max-width: 340px) {
   .Links {
@@ -1073,11 +1075,44 @@
   text-align: center;
 }
 
+.Titulo_imagem_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .imagens_Beneficios {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (min-width: 800px) and (max-width: 980px) {
+  .imagens_Beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+}
+
 .Subtitulo_Beneficios {
   font-family: "Poppins", sans-serif;
   justify-content: center;
   text-align: center;
   font-size: 30px;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Subtitulo_Beneficios {
+    font-size: 20px;
+  }
+}
+@media (min-width: 800px) and (max-width: 980px) {
+  .Subtitulo_Beneficios {
+    font-size: 20px;
+  }
 }
 
 .Texto_Beneficios {
@@ -1087,6 +1122,18 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Texto_Beneficios {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media (min-width: 800px) and (max-width: 980px) {
+  .Texto_Beneficios {
+    width: 100%;
+    font-size: 15px;
+  }
 }
 
 .beneficios1 {
@@ -1099,10 +1146,11 @@
   color: #EEEEEE;
   height: 600px;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 800px) {
   .beneficios1 {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -1128,16 +1176,17 @@
   color: #EEEEEE;
   height: 600px;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 800px) {
   .beneficios2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
 }
-@media (min-width: 600px) and (max-width: 980px) {
+@media (min-width: 800px) and (max-width: 980px) {
   .beneficios2 {
     display: flex;
     flex-direction: column;
@@ -1148,8 +1197,8 @@
 }
 
 .beneficios3 {
-  margin: 0 auto;
-  padding: 10%;
+  padding: 4%;
+  gap: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1157,7 +1206,16 @@
   color: #EEEEEE;
   height: 600px;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 800px) {
+  .beneficios3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+  }
+}
+@media (min-width: 800px) and (max-width: 980px) {
   .beneficios3 {
     display: flex;
     flex-direction: column;
@@ -1166,8 +1224,22 @@
     height: 100%;
   }
 }
-@media (min-width: 600px) and (max-width: 980px) {
-  .beneficios3 {
+
+.Beneficios_3 {
+  display: flex;
+  height: 100%;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Beneficios_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+}
+@media (min-width: 800px) and (max-width: 980px) {
+  .Beneficios_3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1196,7 +1268,19 @@
 .Informaçoes {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  border-radius: 15px;
+  background-color: #053944;
+  width: 100%;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .Informaçoes {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #053944;
+    width: 60%;
+    margin-right: 8%;
+  }
 }
 
 .Input_Paciente {
@@ -1204,10 +1288,42 @@
   border: none;
   border-radius: 5px;
   height: 30px;
+  width: 250px;
+  padding: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
   width: 300px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-top: 50%;
   padding: 3%;
+  margin-left: 10%;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  .search {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50%;
+    padding: 3%;
+  }
 }
 
 .patient-info {

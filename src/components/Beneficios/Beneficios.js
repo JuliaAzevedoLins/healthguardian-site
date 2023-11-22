@@ -31,12 +31,14 @@ function Beneficios() {
             </div>
             <div className="beneficios">
             <div className="beneficios3">
-                <div className="Titulo_imagem">
+                <div className="Beneficios_3">
+                <div className="Titulo_imagem_3">
                     <h2 className="Subtitulo_Beneficios">Verificação dos sintomas</h2>
                     <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
                         O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
                 </div>
                 <div className="Informaçoes">
+                    <section className="search">
                     <h2 className="Subtitulo_Beneficios">Procure aqui seu dispositivo!</h2>
                     <input type="text" className="Input_Paciente" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Procure seu nome" />
                     {searchTerm && filteredData.map((item, index) => (
@@ -55,10 +57,12 @@ function Beneficios() {
                             <strong>Temperatura:</strong> {item.temperatura} <br />
                         </li>
                     ))}
+                    </section> 
+                </div>
                 </div>
             </div>
                 <div className="beneficios1">
-                    <img src={Homem} alt="Homem" />
+                    <img className="imagens_Beneficios" src={Homem} alt="Homem" />
                     <div className="Titulo_imagem">
                         <h2 className="Subtitulo_Beneficios">Recuperação personalizada</h2>
                         <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
@@ -71,10 +75,10 @@ function Beneficios() {
                         <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
                             O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
                     </div>
-                    <img src={Estetoscopio} alt="Estetoscopio" />
+                    <img className="imagens_Beneficios" src={Estetoscopio} alt="Estetoscopio" />
                 </div>
                 <div className="beneficios1">
-                    <img src={Celular} alt="Celular" />
+                    <img className="imagens_Beneficios" src={Celular} alt="Celular" />
                     <div className="Titulo_imagem">
                         <h2 className="Subtitulo_Beneficios">Comunicação eficiente</h2>
                         <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.

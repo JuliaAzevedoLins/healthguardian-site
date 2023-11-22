@@ -31,7 +31,7 @@ function Header() {
   const Deslogar = styled(Link)`
     margin-right: 1%;
     width: 100px;
-    height: 30%;
+    height: 40%;
     background-color: #c3913b;
     border-radius: 5px;
     border: none;
@@ -87,13 +87,15 @@ function Header() {
         <img className="Marca" src={Logo} alt="Logo" />
         <h1 className="HealthGuardian">Health Guardian</h1>
       </section>
+      <section className="Links">
       {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
         <>
-          <div onClick={() => navigateTo("/HealthGuardian")}>HealthGuardian</div>
-          <div onClick={() => navigateTo("/Criadores")}>Criadores</div>
-          <div onClick={() => navigateTo("/Beneficios")}>Beneficios</div>
+          <div className="link_header" onClick={() => navigateTo("/HealthGuardian")}>HealthGuardian</div>
+          <div className="link_header" onClick={() => navigateTo("/Criadores")}>Criadores</div>
+          <div className="link_header" onClick={() => navigateTo("/Beneficios")}>Beneficios</div>
         </>
       )}
+      </section>
       <section className="Nome_Deslogar">
         <h2 className="Nome_LocalStorage">Bem-Vindo: <strong>{firstName}</strong></h2>
         {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Cadastro' && (
