@@ -30,37 +30,6 @@ function Beneficios() {
                 <h1 className="Titulo_Beneficios">Nossos Benefícios</h1>
             </div>
             <div className="beneficios">
-            <div className="beneficios3">
-                <div className="Beneficios_3">
-                <div className="Titulo_imagem_3">
-                    <h2 className="Subtitulo_Beneficios">Verificação dos sintomas</h2>
-                    <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
-                        O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
-                </div>
-                <div className="Informaçoes">
-                    <section className="search">
-                    <h2 className="Subtitulo_Beneficios">Procure aqui seu dispositivo!</h2>
-                    <input type="text" className="Input_Paciente" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Procure seu nome" />
-                    {searchTerm && filteredData.map((item, index) => (
-                        <li key={index} className="patient-info">
-                            <strong>Question 1:</strong> {item.questao1 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 2:</strong> {item.questao2 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 3:</strong> {item.questao3 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 4:</strong> {item.questao4 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 5:</strong> {item.questao5 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 6:</strong> {item.questao6 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 7:</strong> {item.questao7 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 8:</strong> {item.questao8 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 9:</strong> {item.questao9 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Question 10:</strong> {item.questao10 === 1 ? 'Sim' : 'Não'} <br />
-                            <strong>Pressão:</strong> {item.pressao} <br />
-                            <strong>Temperatura:</strong> {item.temperatura} <br />
-                        </li>
-                    ))}
-                    </section> 
-                </div>
-                </div>
-            </div>
                 <div className="beneficios1">
                     <img className="imagens_Beneficios" src={Homem} alt="Homem" />
                     <div className="Titulo_imagem">
@@ -82,7 +51,36 @@ function Beneficios() {
                     <div className="Titulo_imagem">
                         <h2 className="Subtitulo_Beneficios">Comunicação eficiente</h2>
                         <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
-                            O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
+                            O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.
+                            verifique abaixo um despositivo cadastrado!</p>
+                    </div>
+                </div>
+            </div>
+            <div className="beneficios3">
+                <div className="Beneficios_3">
+                    <div className="Informaçoes">
+                        <section className="search">
+                            <h2 className="Subtitulo_Beneficios">Procure aqui seu dispositivo!</h2>
+                            <div className="Print_lista">
+                            <input type="text" className="Input_Paciente" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Procure seu nome" />
+                            {searchTerm && filteredData.map((item, index) => (
+                                <li key={index} className="patient-info">
+                                    <strong>Question 1:</strong> {item.questao1 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 2:</strong> {item.questao2 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 3:</strong> {item.questao3 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 4:</strong> {item.questao4 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 5:</strong> {item.questao5 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 6:</strong> {item.questao6 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 7:</strong> {item.questao7 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 8:</strong> {item.questao8 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 9:</strong> {item.questao9 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Question 10:</strong> {item.questao10 === 1 ? 'Sim' : 'Não'} <br />
+                                    <strong>Pressão:</strong> {item.pressao} <br />
+                                    <strong>Temperatura:</strong> {item.temperatura} <br />
+                                </li>
+                            ))}
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

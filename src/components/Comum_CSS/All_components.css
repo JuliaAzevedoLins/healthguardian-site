@@ -1057,6 +1057,22 @@
   background-size: cover;
   height: 500px;
 }
+@media (min-width: 300px) and (max-width: 400px) {
+  .Div_itulo_Beneficios {
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+  }
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  .Div_itulo_Beneficios {
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+  }
+}
 
 .Titulo_Beneficios {
   color: #EEEEEE;
@@ -1064,6 +1080,31 @@
   padding: 14%;
   width: 50%;
   font-size: 50px;
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .Titulo_Beneficios {
+    font-size: 30px;
+    padding: 10%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .Titulo_Beneficios {
+    font-size: 40px;
+    padding: 10%;
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .Titulo_imagem {
@@ -1084,8 +1125,8 @@
 
 @media (min-width: 300px) and (max-width: 800px) {
   .imagens_Beneficios {
-    width: 50%;
-    height: 50%;
+    width: 250px;
+    height: 250px;
   }
 }
 @media (min-width: 800px) and (max-width: 980px) {
@@ -1153,7 +1194,7 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 60vh;
   }
 }
 @media (min-width: 600px) and (max-width: 980px) {
@@ -1184,6 +1225,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    height: 60vh;
   }
 }
 @media (min-width: 800px) and (max-width: 980px) {
@@ -1212,7 +1254,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 500px;
   }
 }
 @media (min-width: 800px) and (max-width: 980px) {
@@ -1297,7 +1339,6 @@
 .search {
   gap: 50px;
   display: flex;
-  flex-direction: column;
   border: none;
   border-radius: 5px;
   height: 30px;
@@ -1308,6 +1349,7 @@
   margin-top: 50%;
   padding: 3%;
   margin-left: 10%;
+  margin-bottom: 1%;
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .search {
@@ -1321,9 +1363,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 50%;
+    margin-bottom: 50%;
     padding: 3%;
   }
+}
+
+.Print_lista {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .patient-info {
