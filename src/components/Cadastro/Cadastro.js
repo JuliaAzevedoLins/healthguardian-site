@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 import Fundo from "./wallpaper.png"
+import { useNavigate } from 'react-router-dom';
 
 const Main = styled.div`
   display: flex;
@@ -74,6 +75,8 @@ function Signup() {
 
   const [error, setError] = useState(null);
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
   
@@ -103,12 +106,16 @@ function Signup() {
       .then((data) => {
         console.log("Success:", data);
         setError('Cadastro concluído com sucesso!'); // Set the success message
+        let Primeiro_nome = form.name.split(" ")[0];
+        localStorage.setItem("loggedInUser", Primeiro_nome);
+        navigate('/HealthGuardian'); // Redirect to the Health Guardian page
       })
       .catch((error) => {
         console.error("Error:", error);
         setError('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.'); // Set an error message
       });
   };
+
 
   return (
     <Main>
