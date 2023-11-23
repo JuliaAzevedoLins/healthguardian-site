@@ -33,15 +33,13 @@ function Beneficios() {
                     <img className="imagens_Beneficios" src={Homem} alt="Homem" />
                     <div className="Titulo_imagem">
                         <h2 className="Subtitulo_Beneficios">Recuperação personalizada</h2>
-                        <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
-                            O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
+                        <p className="Texto_Beneficios">O HealthGuardian adapta seu monitoramento às necessidades específicas do seu pós-operatório, garantindo um acompanhamento personalizado.</p>
                     </div>
                 </div>
                 <div className="beneficios2">
                     <div className="Titulo_imagem">
                         <h2 className="Subtitulo_Beneficios">Prevenção de complicações</h2>
-                        <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
-                            O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.</p>
+                        <p className="Texto_Beneficios">Identificação precoce de quaisquer sintomas ou problemas, permitindo intervenções rápidas para evitar complicações.</p>
                     </div>
                     <img className="imagens_Beneficios" src={Estetoscopio} alt="Estetoscopio" />
                 </div>
@@ -49,9 +47,7 @@ function Beneficios() {
                     <img className="imagens_Beneficios" src={Celular} alt="Celular" />
                     <div className="Titulo_imagem">
                         <h2 className="Subtitulo_Beneficios">Comunicação eficiente</h2>
-                        <p className="Texto_Beneficios">Após um procedimento médico, seu médico determinará a necessidade de acompanhamento.
-                            O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.
-                            verifique abaixo um despositivo cadastrado!</p>
+                        <p className="Texto_Beneficios">Facilita a comunicação entre você e sua equipe médica, proporcionando uma experiência de cuidado mais integrada. Os médicos poderão verificar os sintomas dos pacientes remotamente por meio de nosso chat e sensores.</p>
                     </div>
                 </div>
             </div>
