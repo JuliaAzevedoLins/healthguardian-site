@@ -14,7 +14,7 @@
 ## Importante
 ```diff
 -                                USUÁRIO E SENHA                                  -
-Para acessar o nosso site, utilize as seguintes credenciais ou faça o seu cadastro:
+Para acessar o nosso site, utilize as seguintes credenciais no Login ou faça o seu cadastro:
 
 Usuário: admin@healthguardian
 Senha: 123456
@@ -48,9 +48,15 @@ o HealthGuardian solicitará que você responda a perguntas diárias sobre seu e
 - O período de monitoramento diário será estipulado pelo médico, levando em consideração a natureza do procedimento e sua gravidade. 
 Ao final desse período, uma avaliação geral será realizada para determinar se é necessário continuar o monitoramento.
 
+## Página de benefícios
 
-
-
+**Monitoramento dos pacientes**
+- Em nossa página de benefícios, nós conectados nosso dispositivo IOT da matéria de Edge Computing, nele, os pacientes respondem uma série de perguntas e suas respostas são enviadas para o Firebase para que os médicos e equipes responsáveis possam acessá-las em nosso site
+- Para essa página, nós estamos puxando os dados do Firebase por meio do ID do paciente gerado na simulação IOT
+- Aqui estão alguns IDs para pesquisar em nossa página:
+- paciente32115
+- paciente43894
+- Importante digitar o ID examente como escrito acima, exemplo "paciente32115", tudo minúsculo
 
 
 # Getting Started with Create React App
