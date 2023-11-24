@@ -36,15 +36,18 @@ Acesse aqui o nosso site:
 
 ## Funcionalidades do HealthGuardian
 
-**Monitoramento personalizado**
+**- Monitoramento personalizado**
 - Após um procedimento médico, seu médico determinará a necessidade de acompanhamento. 
 O HealthGuardian utilizará tecnologia avançada para monitorar seus sinais vitais e sintomas de maneira contínua.
-**Avaliações diárias do paciente**
+
+**- Avaliações diárias do paciente**
 - Dependendo da gravidade do procedimento, 
 o HealthGuardian solicitará que você responda a perguntas diárias sobre seu estado de saúde. Essas avaliações são personalizadas e adaptadas às orientações específicas do seu médico.
-**Alertas e intervenções precoces**
+
+**- Alertas e intervenções precoces**
 - Caso o sistema identifique alguma alteração preocupante em seus dados ou nas respostas fornecidas, alertas proativos serão acionados. Se necessário, o HealthGuardian facilitará a comunicação direta com seus profissionais de saúde, permitindo intervenções rápidas.
-**Tempo de monitoramento**
+  
+**- Tempo de monitoramento**
 - O período de monitoramento diário será estipulado pelo médico, levando em consideração a natureza do procedimento e sua gravidade. 
 Ao final desse período, uma avaliação geral será realizada para determinar se é necessário continuar o monitoramento.
 
