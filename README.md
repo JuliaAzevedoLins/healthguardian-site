@@ -16,11 +16,11 @@
 -                                USUÁRIO E SENHA                                  -
 Para acessar o nosso site, utilize as seguintes credenciais ou faça o seu cadastro:
 
-Usuário: admin
+Usuário: admin@healthguardian
 Senha: 123456
 
 ```
-## Link do nosso site
+## Link do nosso site no GitHub Pages
 Acesse aqui o nosso site: 
 [https://juliaazevedolins.github.io/healthguardian-site/](https://juliaazevedolins.github.io/healthguardian-site/)
 
